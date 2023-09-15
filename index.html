@@ -36,16 +36,24 @@
           <h3 class="nav__name">Aishwarya</h3>
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link active-link">Home</a>
+              <a href="#home" class="nav__link">Home</a>
             </li>
             <li class="nav__item">
               <a href="#about" class="nav__link">About Me</a>
             </li>
             <li class="nav__item">
+              <a href="#services" class="nav__link">Services</a>
+            </li>
+            <li class="nav__item">
               <a href="#projects" class="nav__link">Projects</a>
             </li>
             <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact Me</a>
+              <a href="#reviews" class="nav__link">Clients & Reviews</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link nav__link-button"
+                >Contact Me</a
+              >
             </li>
           </ul>
 
@@ -70,13 +78,16 @@
       <!--==================== HOME ======================-->
       <section class="home section" id="home">
         <div class="home__container container grid">
-          <h1 class="home__name">
-            <span class="hello-text">Hi,</span> I am Aishwarya
-          </h1>
-          <p class="home_about">
-            I am a self-taught Frontend Developer and I love making things for
-            the web.
-          </p>
+          <div class="home__top-intro">
+            <h1 class="home__name">
+              <span class="hello-text">Hi,</span> I am Aishwarya
+            </h1>
+            <p class="home_about">
+              I am a self-taught Frontend Developer and I love making things for
+              the web.
+            </p>
+          </div>
+
           <div class="home__perfil">
             <div class="home__image">
               <img src="assets/img/coder.jpg" alt="" class="home__img" />
@@ -156,33 +167,100 @@
       <section class="about section" id="about">
         <div class="about__container container grid">
           <h2 class="section__title-1">About Me.</h2>
-          <p class="home__description"><b>My Skills Are:</b></p>
-          <div class="tech-stack">
-            <div class="circle">
-              <span><img src="assets/SVGIcons/react-logo.svg" /></span>
-              <span><img src="assets/SVGIcons/git.svg" /></span>
-              <span><img src="assets/SVGIcons/bootstrap.svg" /></span>
-              <span><img src="assets/SVGIcons/adobexd.svg" /></span>
-              <span><img src="assets/SVGIcons/html-5.svg" /></span>
-              <span><img src="assets/SVGIcons/figma.svg" /></span>
-              <span><img src="assets/SVGIcons/css3.svg" /></span>
-              <span><img src="assets/SVGIcons/javascript.svg" /></span>
-              <span><img src="assets/SVGIcons/MySQL-Dark.svg" /></span>
-              <span><img src="assets/SVGIcons/Firebase-Dark.svg" /></span>
-              <span><img src="assets/SVGIcons/github.svg" /></span>
-              <span><img src="assets/SVGIcons/gitlab.svg" /></span>
-              <span><img src="assets/SVGIcons/vscode.svg" /></span>
-              <span><img src="assets/SVGIcons/nodejs.svg" /></span>
-              <span><img src="assets/SVGIcons/sass.svg" /></span>
-              <span><img src="assets/SVGIcons/docker.svg" /></span>
+          <div class="about__card">
+            <div class="tools">
+              <div class="circle">
+                <span class="red box"></span>
+              </div>
+              <div class="circle">
+                <span class="yellow box"></span>
+              </div>
+              <div class="circle">
+                <span class="green box"></span>
+              </div>
+            </div>
+            <div class="card__content">
+              <div class="terminal_prompt">
+                <span class="terminal_user">aishwaryaea@codes:</span>
+                <span class="terminal_location">~</span>
+                <span class="terminal_bling">$</span>
+                <span class="terminal_cursor"></span>
+              </div>
+              Greetings! 🌟 As a self-taught frontend developer with nearly 4
+              years in the software industry, my journey has been fueled by
+              curiosity and passion. I've embraced challenges to craft
+              user-centric experiences that blend creativity and code. Beyond
+              the screen, I find joy in capturing moments through photography,
+              exploring new worlds in books, and expressing myself with strokes
+              of paint. Grateful for the opportunities, I continue to evolve,
+              inspired by both pixels and the beauty of life's little details.
+            </div>
+            <div class="about__buttons_card">
+              <a href="#contact" class="button">
+                <i class="ri-send-plane-fill"></i>
+                Contact Me
+              </a>
+              <a
+                href="assets/Aishwarya_EA_Updated_Resume_Aug_2023.pdf"
+                download
+                class="button"
+                >CV</a
+              >
             </div>
           </div>
-          <div class="about__info">
-            <p class="about__description">
-              Passionate about creating <b>Web Pages</b> with
-              <b>UI/UX User Interface</b>, I have over 3.8 years of experience
-              and many clients are happy with the projects carried out.
+
+          <!-- mobile card -->
+          <div class="about__card__mobile">
+            <span class="about__card__mobile-title">🍪 Cookie Notice!</span>
+            <p class="about__card__mobile-description">
+              Haha, just kidding. I don't use cookies. But, please read on to
+              know more about me..
+              <a href="#">
+                <img
+                  src="assets/img/curved-arrow-fancy.png"
+                  class="home__arrow__about"
+              /></a>
             </p>
+            <div class="about__card__mobile-actions">
+              <a class="about__card__mobile-prefs" type="button">
+                Manage preferences
+              </a>
+              <button class="about__card__mobile-decline" onclick="hidestck()">
+                Decline
+              </button>
+              <button class="about__card__mobile-valid" onclick="showstck()">
+                Accept
+              </button>
+            </div>
+          </div>
+
+          <!-- tech stack list -->
+          <div class="tech-list">
+            <p class="skills__description"><b>My Skills Are:</b></p>
+            <div class="tech-stack">
+              <div class="circle">
+                <span><img src="assets/SVGIcons/react-logo.svg" /></span>
+                <span><img src="assets/SVGIcons/git.svg" /></span>
+                <span><img src="assets/SVGIcons/bootstrap.svg" /></span>
+                <span><img src="assets/SVGIcons/adobexd.svg" /></span>
+                <span><img src="assets/SVGIcons/html-5.svg" /></span>
+                <span><img src="assets/SVGIcons/figma.svg" /></span>
+                <span><img src="assets/SVGIcons/css3.svg" /></span>
+                <span><img src="assets/SVGIcons/javascript.svg" /></span>
+                <span><img src="assets/SVGIcons/MySQL-Dark.svg" /></span>
+                <span><img src="assets/SVGIcons/Firebase-Dark.svg" /></span>
+                <span><img src="assets/SVGIcons/github.svg" /></span>
+                <span><img src="assets/SVGIcons/gitlab.svg" /></span>
+                <span><img src="assets/SVGIcons/vscode.svg" /></span>
+                <span><img src="assets/SVGIcons/nodejs.svg" /></span>
+                <span><img src="assets/SVGIcons/sass.svg" /></span>
+                <span><img src="assets/SVGIcons/docker.svg" /></span>
+                <span><img src="assets/SVGIcons/jest.png" /></span>
+                <span><img src="assets/SVGIcons/ts.svg" /></span>
+                <span><img src="assets/SVGIcons/python.png" /></span>
+                <span><img src="assets/SVGIcons/jira.svg" /></span>
+              </div>
+            </div>
 
             <div class="about__buttons">
               <a href="#contact" class="button">
@@ -210,9 +288,6 @@
           <article class="services__card">
             <div class="services__border"></div>
             <div class="services__content">
-              <span class="customer__logo"
-                ><img src="assets/img/Cust/freshworks.png"
-              /></span>
               <div class="services__icon">
                 <div class="services__box"></div>
                 <i class="ri-layout-4-line"></i>
@@ -229,10 +304,6 @@
           <article class="services__card">
             <div class="services__border"></div>
             <div class="services__content">
-              <span class="customer__logo"
-                ><img src="assets/img/Cust/applied materials.png" />
-                <img src="assets/img/Cust/qantas.png"
-              /></span>
               <div class="services__icon">
                 <div class="services__box"></div>
                 <i class="ri-code-box-line"></i>
@@ -393,20 +464,21 @@
       </section>
 
       <!--==================== Client Testimonials ====================-->
-      <section class="client__testimonials">
+      <section class="clients__section section" id="reviews">
         <h2 class="section__title-2">
           <span> Clients & Reviews. </span>
         </h2>
+
         <div class="client__reviews container grid">
+          <h4 class="client__description">
+            Check out what clients have said about my work..
+          </h4>
+          <img src="assets/img/curved-arrow.svg" class="home__arrow" />
           <!-- client 1 -->
-          <article class="services__card">
-            <div class="services__content" id="client1">
-              <div class="services__icon">
-                <img src="assets/img/Cust/bluesquare.png" />
-              </div>
-              <h2 class="services__title">BlueSquare UK</h2>
+          <article class="clients__card">
+            <div class="clients__content">
               <span class="ratings">5⭐</span>
-              <p class="services__description">
+              <p class="clients__description">
                 "Overall, the whole process met expectations, the weekly calls
                 were good to catch up on. Resolve and support times were prompt
                 and addressed any issues directly."
@@ -414,14 +486,10 @@
             </div>
           </article>
           <!-- client 2 -->
-          <article class="services__card">
-            <div class="services__content" id="client2">
-              <div class="services__icon">
-                <img src="assets/img/Cust/tgc.png" />
-              </div>
-              <h2 class="services__title">The Guidance Center</h2>
+          <article class="clients__card">
+            <div class="clients__content">
               <span class="ratings">5⭐</span>
-              <p class="services__description">
+              <p class="clients__description">
                 "Aishwarya fielded all of our technical questions and provided
                 us guidance throughout the process. We would take her as our
                 permanent technical contact going forward if we could."
@@ -429,14 +497,10 @@
             </div>
           </article>
           <!-- client 3 -->
-          <article class="services__card">
-            <div class="services__content" id="client3">
-              <div class="services__icon">
-                <img src="assets/img/Cust/viridor.png" />
-              </div>
-              <h2 class="services__title">Viridor UK</h2>
+          <article class="clients__card">
+            <div class="clients__content">
               <span class="ratings">5⭐</span>
-              <p class="services__description">
+              <p class="clients__description">
                 "Communication was excellent and any questions, changes or
                 issues were responded to quickly and efficiently. My thanks to
                 Aish and team for their time during our engagement."
@@ -444,14 +508,10 @@
             </div>
           </article>
           <!-- client 4 -->
-          <article class="services__card">
-            <div class="services__content" id="client4">
-              <div class="services__icon">
-                <img src="assets/img/Cust/upenn.png" />
-              </div>
-              <h2 class="services__title">University of Pennsylvania</h2>
+          <article class="clients__card">
+            <div class="clients__content">
               <span class="ratings">5⭐</span>
-              <p class="services__description">
+              <p class="clients__description">
                 "Thank you for the information and resources. We appreciated the
                 opportunity to work with you and your assistance in developing
                 the ORS instance."
@@ -459,35 +519,16 @@
             </div>
           </article>
           <!-- client 5 -->
-          <article class="services__card">
-            <div class="services__content" id="client5">
-              <div class="services__icon">
-                <img src="assets/img/Cust/marketstar.png" />
-              </div>
-              <h2 class="services__title">Marketstar</h2>
+          <article class="clients__card">
+            <div class="clients__content">
               <span class="ratings">5⭐</span>
-              <p class="services__description">
+              <p class="clients__description">
                 "I am extremely pleased with the service provided by Aish. The
                 explanation for each module was crystal clear. It was a great
                 experience overall."
               </p>
             </div>
           </article>
-          <p class="client__description">
-            And many more 5⭐ ratings from customers including but not limited
-            to:
-          </p>
-          <div class="client__list">
-            <img src="assets/img/Cust/pacific bells.png" alt="" />
-            <img src="assets/img/Cust/hk.png" alt="" />
-            <img src="assets/img/Cust/imperial college.png" alt="" />
-            <img src="assets/img/Cust/babylon.png" alt="" />
-            <img src="assets/img/Cust/bib.png" alt="" />
-            <img src="assets/img/Cust/appway.png" alt="" />
-            <img src="assets/img/Cust/coleg gwent.png" alt="" />
-            <img src="assets/img/Cust/media monks.png" alt="" />
-            <img src="assets/img/Cust/visma.png" alt="" />
-          </div>
         </div>
       </section>
 

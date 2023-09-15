@@ -125,3 +125,23 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 /*=============== SCROLL REVEAL ===============*/
+
+
+// accept and decline to read../
+const acceptBtn = document.querySelector(".about__card__mobile-accept");
+const declineBtn = document.querySelector(".about__card__mobile-decline");
+const showTech = document.querySelector(".tech-list");
+const card = document.querySelector(".about__card__mobile");
+const pref = document.querySelector(".about__card__mobile-prefs");
+
+pref.addEventListener("click", () => {
+    alert("Click on your desired button in the card to know more about my work")
+})
+showstck = () => {
+    showTech.style.display = "block";
+    card.style.display = "none";
+}
+
+hidestck = () => {
+    alert("Aw, shucks☹️");
+}
