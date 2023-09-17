@@ -1397,6 +1397,17 @@ body.dark-theme {
     color: var(--buttons-color);
   }
 
+  .home {
+    background-image: url("../img/wallpaper-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .dark-theme .home {
+    background-image: url("../img/wallpaper-desktop-dark.jpg");
+    background-size: cover;
+    background-position: center;
+  }
   .home__container {
     grid-template-columns: repeat(2, 600px);
     gap: 2rem 4rem;
@@ -1655,11 +1666,11 @@ body.dark-theme {
 
   @keyframes typing {
     0% {
-      background: #ffffff;
+      background: var(--primary-text-color);
     }
 
     49% {
-      background: #ffffff;
+      background: var(--primary-text-color);
     }
 
     60% {
@@ -1671,7 +1682,7 @@ body.dark-theme {
     }
 
     100% {
-      background: #ffffff;
+      background: var(--primary-text-color);
     }
   }
   .about__card__mobile {
