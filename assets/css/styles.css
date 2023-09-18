@@ -187,6 +187,7 @@ body.dark-theme {
   bottom: 0; /* Adjust the initial vertical position */
   transform: translateX(-50%);
   animation: floatUpDown 4s ease-in-out infinite;
+  margin-bottom: 2rem;
 }
 
 .dark-theme .home__img {
@@ -318,10 +319,7 @@ body.dark-theme {
     position: fixed;
     top: -100%;
     left: 0;
-    background: rgba(10, 10, 10, 0.5);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(10, 10, 10, 0.25);
+    background: hsla(0, 0%, 0%, 0.6);
     width: 100%;
     padding-block: 1.8rem 5rem;
     text-align: center;
@@ -377,7 +375,7 @@ body.dark-theme {
 
 .nav__link {
   position: relative;
-  color: var(--primary-text-color);
+  color: var(--white-color);
   font-size: var(--h3-font-size);
   font-weight: var(--font-semi-bold);
   transition: color 0.3s;
@@ -387,7 +385,7 @@ body.dark-theme {
   content: "";
   width: 0;
   height: 2px;
-  background-color: var(--alert-color);
+  background-color: var(--buttons-color);
   position: absolute;
   left: 0;
   bottom: -0.5rem;
@@ -419,16 +417,14 @@ body.dark-theme {
 }
 /* Active link */
 .active-link {
-  color: var(--buttons-color);
+  color: var(--alert-color);
 }
 
 .active-link::after {
   width: 25%;
 }
 /*=============== HOME ===============*/
-.home {
-  height: 100vh;
-}
+
 .hello-text {
   color: var(--alert-color);
 }
@@ -452,8 +448,9 @@ body.dark-theme {
   position: relative;
   z-index: 10;
   border-radius: 14px;
-  height: fit-content;
+  height: 100%;
   animation: floatUpDown 3s ease-in-out infinite;
+  margin-bottom: 2rem;
 }
 
 @keyframes floatUpDown {
@@ -661,9 +658,10 @@ body.dark-theme {
 }
 
 .button {
-  background-color: var(--buttons-color);
   padding: 1.1rem 1.5rem;
-  color: var(--primary-text-color);
+  background-color: var(--buttons-color);
+  color: var(--alert-color);
+  margin: 0.75rem;
   font-weight: var(--font-medium);
   transition: background-color 0.4s;
   border-radius: 24px;
@@ -1113,6 +1111,7 @@ body.dark-theme {
 .client__reviews .clients__card {
   position: relative;
   margin-top: 0;
+  width: 320px;
 }
 .client__reviews .clients__content {
   padding: 1.5rem;
@@ -1649,12 +1648,11 @@ body.dark-theme {
     border-radius: 14px;
     height: 100%;
     bottom: 9rem;
-    right: 5rem;
     animation: floatUpDown 3s ease-in-out infinite;
   }
 
   .dark-theme .home {
-    background-image: url("../img/dark-bg-1.png");
+    background-image: url("../img/dark-bg-1.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -1754,7 +1752,7 @@ body.dark-theme {
   .home__social {
     bottom: 40%;
     left: initial;
-    right: 0.1rem;
+    right: -6rem;
   }
 
   .home__social-link {
@@ -1772,16 +1770,16 @@ body.dark-theme {
     height: max-content;
     width: fit-content;
     position: fixed;
-    left: 3rem;
+    left: 2.5rem;
     top: 30%;
     margin: auto 0;
     display: grid;
     row-gap: 1rem;
     z-index: 15;
-    background: rgba(255, 230, 109, 0.35);
+    background: rgba(78, 205, 196, 0.25);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 230, 109, 0.175);
+    border: 1px solid rgba(78, 205, 196, 0.125);
   }
   /* about  */
   .about__container {
@@ -2051,8 +2049,8 @@ body.dark-theme {
   .client__reviews {
     margin-left: 4.5rem;
     display: grid;
-    grid-template-columns: repeat(5, 250px); /* Adjust column width as needed */
-    column-gap: 20px; /* Adjust gap between cards */
+    grid-template-columns: repeat(5, 270px); /* Adjust column width as needed */
+    column-gap: 15px; /* Adjust gap between cards */
     grid-auto-rows: auto; /* Let rows adapt to content height */
     align-items: center;
   }
