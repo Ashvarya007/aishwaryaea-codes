@@ -434,10 +434,13 @@ body.dark-theme {
 .home__name {
   font-size: var(--biggest-font-size);
   text-align: center;
+  margin-bottom: 2rem;
 }
 .home__perfil {
   position: relative;
   justify-self: center;
+  height: 100%;
+  margin-top: 1rem;
 }
 
 .home__image {
