@@ -124,25 +124,13 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
-/*=============== SCROLL REVEAL ===============*/
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 2500,
-    delay: 400,
-    reset: true //animation repeat
-})
 
-sr.reveal(`.home__perfil, .about__card, .contact__mail`, { origin: 'right' })
-sr.reveal(`.home__name, .home__info, .home_about, .about__container, .section__title-1, .contact__data`, { origin: 'left' })
-sr.reveal(`.tech-list .about__card-mobile`, { origin: 'bottom' })
-sr.reveal(`.home__perfil`, { origin: 'right' })
-sr.reveal(`.services__card, .projects__card, .clients__card`, { interval: 100 })
 
 // accept and decline to read../
 const acceptBtn = document.querySelector(".about__card__mobile-accept");
 const declineBtn = document.querySelector(".about__card__mobile-decline");
 const showTech = document.querySelector(".tech-list");
+const showCard = document.querySelector(".about__card");
 const card = document.querySelector(".about__card__mobile");
 const pref = document.querySelector(".about__card__mobile-prefs");
 
@@ -151,9 +139,26 @@ pref.addEventListener("click", () => {
 })
 showstck = () => {
     showTech.style.display = "block";
+    showCard.style.display = "block"
     card.style.display = "none";
+   
 }
 
 hidestck = () => {
     alert("Aw, shucks☹️");
 }
+
+/*=============== SCROLL REVEAL ===============*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 50,
+    reset: true //animation repeat
+})
+
+sr.reveal(`.home__perfil, .about__card, .contact__mail`, { origin: 'right' })
+sr.reveal(`.home__name, .home__info, .home_about, .about__container, .section__title-1, .contact__data`, { origin: 'left' })
+sr.reveal(`.tech-list .about__card__mobile`, { origin: 'bottom' })
+sr.reveal(`.home__perfil`, { origin: 'right' })
+sr.reveal(`.services__card, .projects__card, .clients__card`, { interval: 90 })

@@ -48,7 +48,7 @@
               <a href="#projects" class="nav__link">Projects</a>
             </li>
             <li class="nav__item">
-              <a href="#reviews" class="nav__link">Clients & Reviews</a>
+              <a href="#clientReviews" class="nav__link">Clients & Reviews</a>
             </li>
             <li class="nav__item">
               <a href="#contact" class="nav__link nav__link-button"
@@ -86,12 +86,21 @@
               I am a self-taught Frontend Developer and I love making things for
               the web.
             </p>
+            <p class="home__about-1">
+              I am a self-taught Frontend Developer and I love making things for
+              the web. With knowledge in web development and design, I offer the
+              best projects resulting in quality work.
+            </p>
           </div>
 
           <div class="home__perfil">
             <div class="home__image">
-              <img src="assets/img/coder.jpg" alt="" class="home__img" />
-              <div class="home__shadow"></div>
+              <img src="assets/img/sailing.png" alt="" class="home__img" />
+              <img
+                src="assets/img/astronaut.svg"
+                alt="astronaut"
+                class="home__img-dark"
+              />
               <img
                 src="assets/img/curved-arrow.svg"
                 alt=""
@@ -102,8 +111,6 @@
                 alt=""
                 class="home__line"
               />
-
-              <div class="geometric-box"></div>
             </div>
 
             <div class="home__social">
@@ -128,24 +135,26 @@
                 <i class="ri-home-line"></i>
               </a>
             </div>
-
-            <div class="side__nav">
-              <a href="#home" class="home__side__nav__link">
-                <i class="ri-circle-fill"></i>
-              </a>
-              <a href="#about" class="home__side__nav__link">
-                <i class="ri-circle-fill"></i>
-              </a>
-              <a href="#services" class="home__side__nav__link">
-                <i class="ri-circle-fill"></i>
-              </a>
-              <a href="#projects" class="home__side__nav__link">
-                <i class="ri-circle-fill"></i>
-              </a>
-              <a href="#contact" class="home__side__nav__link">
-                <i class="ri-circle-fill"></i>
-              </a>
-            </div>
+          </div>
+          <div class="side__nav">
+            <a href="#home" class="home__side__nav__link">
+              <i class="ri-home-line"></i>
+            </a>
+            <a href="#about" class="home__side__nav__link">
+              <i class="ri-information-line"></i>
+            </a>
+            <a href="#services" class="home__side__nav__link">
+              <i class="ri-service-line"></i>
+            </a>
+            <a href="#projects" class="home__side__nav__link">
+              <i class="ri-briefcase-line"></i>
+            </a>
+            <a href="#clientReviews" class="home__side__nav__link">
+              <i class="ri-customer-service-2-line"></i>
+            </a>
+            <a href="#contact" class="home__side__nav__link">
+              <i class="ri-contacts-line"></i>
+            </a>
           </div>
           <div class="home__info">
             <p class="home__description">
@@ -157,7 +166,7 @@
               <div class="home__scroll-box">
                 <i class="ri-arrow-down-s-line"></i>
               </div>
-              <span class="home__scroll-text"> Scroll Down </span>
+              <span class="home__scroll-text">Scroll Down</span>
             </a>
           </div>
         </div>
@@ -204,7 +213,7 @@
                 href="assets/Aishwarya_EA_Updated_Resume_Aug_2023.pdf"
                 download
                 class="button"
-                >CV</a
+                ><i class="ri-download-2-line"></i>Download CV</a
               >
             </div>
           </div>
@@ -271,7 +280,7 @@
                 href="assets/Aishwarya_EA_Updated_Resume_Aug_2023.pdf"
                 download
                 class="button"
-                >CV</a
+                ><i class="ri-download-2-line"></i>Download CV</a
               >
             </div>
           </div>
@@ -297,8 +306,15 @@
                 Beautiful and elegant designs with interfaces that are
                 intuitive, efficient and pleasant to use for the user.
               </p>
+              <a
+                href="assets/img/ui course.pdf"
+                target="_blank"
+                class="view-details-services"
+                ><i class="ri-arrow-right-line"></i>View</a
+              >
             </div>
           </article>
+
           <!-- 2nd service -->
           <article class="services__card">
             <div class="services__content">
@@ -312,21 +328,34 @@
                 Custom web development tailored to your specifications, designed
                 to provide a flawless user experience.
               </p>
+              <a
+                href="https://www.hackerrank.com/certificates/8630bda41449"
+                target="_blank"
+                class="view-details-services"
+                ><i class="ri-arrow-right-line"></i>View</a
+              >
             </div>
           </article>
+
           <!-- 3rd service -->
+
           <article class="services__card">
             <div class="services__content">
               <div class="services__icon">
                 <div class="services__box"></div>
                 <i class="ri-customer-service-line"></i>
               </div>
-
               <h2 class="services__title">Customer Onboarding</h2>
               <p class="services__description">
                 End-to-end client onboarding processes, ensuring seamless
                 transitions and exceptional customer experiences.
               </p>
+              <a
+                href="https://www.credly.com/badges/65099f4d-24f6-4199-b2c7-642061a849bc/public_url"
+                target="_blank"
+                class="view-details-services"
+                ><i class="ri-arrow-right-line"></i>View</a
+              >
             </div>
           </article>
         </div>
@@ -476,16 +505,14 @@
       </section>
 
       <!--==================== Client Testimonials ====================-->
-      <section class="clients__section section" id="reviews">
+      <section class="clients__section section" id="clientReviews">
         <h2 class="section__title-2">
           <span> Clients & Reviews. </span>
         </h2>
-
+        <h4 class="client__description">
+          Check out what clients have said about my work..
+        </h4>
         <div class="client__reviews container grid">
-          <h4 class="client__description">
-            Check out what clients have said about my work..
-          </h4>
-          <img src="assets/img/curved-arrow.svg" class="home__arrow" />
           <!-- client 1 -->
           <article class="clients__card">
             <div class="clients__content">
