@@ -1554,6 +1554,11 @@ body.dark-theme {
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.275);
   }
+
+  .about__card__mobile {
+    display: grid;
+    place-self: center;
+  }
 }
 /* For large devices */
 @media screen and (min-width: 1150px) {
