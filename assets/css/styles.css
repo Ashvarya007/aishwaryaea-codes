@@ -28,7 +28,7 @@
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Montserrat", sans-serif;
-  --biggest-font-size: 2.2rem;
+  --biggest-font-size: 2.5rem;
   --h1-font-size: 1.75rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1.125rem;
@@ -183,9 +183,9 @@ body.dark-theme {
   position: relative;
   z-index: 10;
   border-radius: 14px;
-  height: fit-content;
-  bottom: 0; /* Adjust the initial vertical position */
-  transform: translateX(-50%);
+  width: 300px;
+  height: 300px;
+  transform: translateX(-60%);
   animation: floatUpDown 4s ease-in-out infinite;
   margin-bottom: 2rem;
 }
@@ -429,7 +429,7 @@ body.dark-theme {
   color: var(--alert-color);
 }
 .home__container {
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 .home__name {
   font-size: var(--biggest-font-size);
@@ -444,16 +444,17 @@ body.dark-theme {
 }
 
 .home__image {
-  width: 220px;
+  max-width: 270px;
+  max-height: 600px;
 }
 
 .home__img {
   position: relative;
   z-index: 10;
   border-radius: 14px;
-  height: fit-content;
+  width: 300px;
+  height: 300px;
   animation: floatUpDown 3s ease-in-out infinite;
-  margin-bottom: 2rem;
 }
 
 @keyframes floatUpDown {
@@ -1530,6 +1531,12 @@ body.dark-theme {
     background-repeat: no-repeat;
   }
 
+  .dark-theme .home {
+    background-image: url(../img/dark-bg-1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   .side__nav {
     padding: 5px;
     border-radius: 10px;
