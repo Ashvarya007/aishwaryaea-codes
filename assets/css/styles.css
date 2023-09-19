@@ -429,7 +429,7 @@ body.dark-theme {
   color: var(--alert-color);
 }
 .home__container {
-  padding-top: 2rem;
+  padding-top: 4rem;
 }
 .home__name {
   font-size: var(--biggest-font-size);
@@ -451,7 +451,7 @@ body.dark-theme {
   position: relative;
   z-index: 10;
   border-radius: 14px;
-  height: 100%;
+  height: fit-content;
   animation: floatUpDown 3s ease-in-out infinite;
   margin-bottom: 2rem;
 }
